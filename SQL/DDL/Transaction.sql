@@ -47,3 +47,10 @@ BEGIN
 	SELECT ID, [Date], Amount, PlayerID FROM INSERTED
 END
 GO
+
+-------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE TRANS
+ADD CONSTRAINT DELETE_TRANACTIONS
+FOREIGN KEY (PlayerID) REFERENCES Player(ID)
+ON DELETE CASCADE;

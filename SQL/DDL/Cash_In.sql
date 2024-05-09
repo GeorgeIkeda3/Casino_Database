@@ -31,3 +31,10 @@ BEGIN
 
 END
 GO
+
+-------------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE CASH_IN
+ADD CONSTRAINT DELETE_TRANS
+FOREIGN KEY (PlayerID) REFERENCES Player(ID)
+ON DELETE CASCADE;
