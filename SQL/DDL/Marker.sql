@@ -1,0 +1,7 @@
+CREATE TABLE MARKER
+(
+	ID BIGINT,
+	MARKER_Date Date,
+	Amount float,
+	PlayerID BIGINT CONSTRAINT FK_MARKER FOREIGN KEY(PlayerID) references Player(ID),
+)

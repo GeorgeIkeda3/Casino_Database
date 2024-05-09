@@ -1,0 +1,4 @@
+CREATE TABLE CASHIER
+(
+	[Name] VARCHAR(50)
+);

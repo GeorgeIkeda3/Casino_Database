@@ -1,0 +1,4 @@
+CREATE TABLE PIT_BOSS
+(
+	[Name] VARCHAR(50)
+);
